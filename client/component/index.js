@@ -52,8 +52,8 @@ export default class Sidebar extends React.Component {
   }
 
   renderUserButton = () => {
-    const user = store.redux.state('app.user.attributes');
-    const content = `${user.name.slice(0, 1)}${user.surname.slice(0, 1)}`
+    const user = store.redux.state('app.user.attributes') || {};
+    const content = `${(user.name || '').slice(0, 1)}${(user.surname || '').slice(0, 1)}`
 
     const style = {
       fontSize: 18,
