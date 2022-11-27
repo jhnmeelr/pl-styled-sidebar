@@ -44,7 +44,7 @@ export default class SidebarList extends React.Component {
     const user = store.redux.state('app.user');
     const sandbox = new Sandbox({ user });
 
-    const modelsToShow = lodash.filter(models, model => sandbox.executeScript(model.visibility_rule, { modelId: model.id }, `model/${model.id}/visibility_rule`));
+    const modelsToShow = lodash.filter(models, model => sandbox.executeScript(model.menu_visibility, { modelId: model.id }, `model/${model.id}/menu_visibility`));
     const modelsMap = lodash.keyBy(modelsToShow, 'id');
     const viewsToShow = lodash.filter(views, view => !!modelsMap[view.model])
     const viewsGroupedByModel = lodash.groupBy(viewsToShow, 'model');
@@ -188,7 +188,7 @@ export default class SidebarList extends React.Component {
     if (!this.props.open) return null
 
     return (
-      <div className="sidebar-list" style={{ width: 300, height: 'calc(100% - 60px)', backgroundColor: '#fff', borderRadius: '10px' }}>
+      <div className="sidebar-list" style={{ width: 300, height: 'calc(100% - 60px)' }}>
         <Components.Input
           type="text"
           style={{ width: '100%' }}

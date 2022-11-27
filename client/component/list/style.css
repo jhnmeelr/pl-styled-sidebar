@@ -1,9 +1,14 @@
 .sidebar-list {
   display: flex;
   flex-direction: column;
+  border-radius: var(--absoluteBorderRadius) !important;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  background-color: #fff;
 }
 
 .sidebar-list input {
+  border-radius: var(--absoluteBorderRadius) !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
