@@ -11,6 +11,11 @@
   border-radius: var(--absoluteBorderRadius) !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
+  border: 1px solid transparent !important;
+}
+
+.sidebar-list input:focus {
+  border-color: var(--focusedFormBorderColor) !important;
 }
 
 .sidebar-list .control-panel {
