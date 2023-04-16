@@ -58,7 +58,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("window.Components['Sidebar'] = (__webpack_require__(/*! ./component */ \"./client/component/index.js\")[\"default\"]);\n\n//# sourceURL=webpack://ext.panel-log/./client/index.js?");
+eval("window.Components['Sidebar'] = (__webpack_require__(/*! ./component */ \"./client/component/index.js\")[\"default\"]);\nwindow.Components['SystemSidebar'] = (__webpack_require__(/*! ./component */ \"./client/component/index.js\")[\"default\"]);\n\n//# sourceURL=webpack://ext.panel-log/./client/index.js?");
 
 /***/ }),
 
